@@ -102,7 +102,7 @@ export const sendMessage = async (req, res) => {
         // await newMessage.save();
 
         // this will run in parallel
-        await Promise.all([converstation.save(), message.save()]);
+        await Promise.all([converstation.save(), newMessage.save()]);
 
         res.status(201).json(newMessage);
 
