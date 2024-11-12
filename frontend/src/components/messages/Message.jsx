@@ -1,6 +1,8 @@
 import React from 'react'
+import { useAuthContext } from '../../context/AuthContext'
 
 function Message() {
+  const {authUser} = useAuthContext();
   return (
     <div className='chat chat-end'>
         <div className='chat-image avatar'>
